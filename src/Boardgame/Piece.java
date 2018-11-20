@@ -2,12 +2,19 @@ package Boardgame;
 
 public class Piece {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	protected Position position;
+	private Board board;
+
+	public Piece(Board board) {
+
+		this.board = board;
+		position = null;
 
 	}
+
+	protected Board getBoard() {
+		return board;
+	}
+	
 
 }
